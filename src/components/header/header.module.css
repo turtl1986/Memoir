@@ -1,0 +1,50 @@
+.header{
+    min-height: 100px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    margin-left: 250px;
+}
+
+.header__greeting{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+}
+
+.header__title{
+font-size: 48px;
+}
+
+.header__subtitle{
+
+}
+
+.header__actions{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+.header__search{
+
+}
+
+.header__input{
+
+}
+
+.header__searchButton{
+
+}
+
+.header__notificationButton{
+
+}
+
+.header__createButton{
+
+}
