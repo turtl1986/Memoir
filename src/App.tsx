@@ -1,5 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import { MainLayout } from './pages/mainLayout'
+import  './reset.css'
+import  './main.css'
+import {NoteEditor} from "./components/noteEditor";
+import {Posts} from "./components/posts";
 
 function App() {
 
@@ -7,8 +11,8 @@ function App() {
         <>
             <Routes>
                 <Route path="/" element={<MainLayout />}>
-                    <Route index element={<h1>Home page</h1>}/>
-
+                    <Route path="/add" element={<NoteEditor />} />
+                    <Route path="/allNotes" element={<Posts />} />
                 </Route>
             </Routes>
         </>

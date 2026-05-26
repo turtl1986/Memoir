@@ -1,8 +1,8 @@
 .nav{
     display: flex;
     flex-direction: column;
-    gap:45px;
-    max-width: 250px;
+    justify-content: space-between;
+    width: var(--sidebar-width);
     height: 100%;
     position: fixed;
     z-index: 1;
@@ -10,7 +10,13 @@
     left: 0;
     overflow-x: hidden;
     padding: 10px 30px;
-    border-right: 1px solid grey;
+    border-right: 1px solid var(--border-color);
+}
+
+.nav__cover{
+    display: flex;
+    flex-direction: column;
+    gap:45px;
 }
 
 .nav__link{
@@ -19,12 +25,17 @@
     align-items: center;
 }
 
-.nav__logo{
-
+.nav__navlink{
+    color: var(--text-color);
 }
 
-.nav__title{
+.nav__navlink:hover{
+    color: var(--text-secondary);
+}
 
+.nav__navlink_title{
+    font-size: 28px;
+    font-weight: 700;
 }
 
 .nav__list{
@@ -34,6 +45,51 @@
     justify-content: flex-start;
 }
 
-.nav__navlink{
+.nav__themeName_sun::before,
+.nav__themeName_moon::before,
+.nav__themeButton_sun::before,
+.nav__themeButton_moon::before{
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
 
+.nav__themeName_sun::before{
+    background-image: url("../../assets/icons/sun.svg");
+}
+
+.nav__themeName_moon::before{
+    background-image: url("../../assets/icons/moon.svg");
+}
+
+.nav__themeButton_sun::before{
+    background-image: url("../../assets/icons/toggle-on.svg");
+}
+
+.nav__themeButton_moon::before{
+    background-image: url("../../assets/icons/toggle-off.svg");
+}
+
+.nav__themeCover{
+    display: flex;
+    gap:20px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 10px;
+    background: var(--surface-color);
+}
+
+.nav__themeName{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    color: var(--text-color);
+}
+
+.nav__themeButton{
+    display: flex;
+    align-items: center;
 }
