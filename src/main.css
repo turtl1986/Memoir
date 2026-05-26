@@ -1,0 +1,49 @@
+:root {
+    /* BACKGROUND */
+    --bg-color: #f4eff4;
+    --surface-color: #fcf9fc;
+    --surface-secondary: #f0e7ef;
+
+    /* TEXT */
+    --text-color: #4b4453;
+    --text-secondary: #7e7484;
+    --text-light: #a79ca8;
+
+    /* PRIMARY */
+    --primary-color: #8f6f86;
+    --primary-hover: #7d5d75;
+    --primary-active: #6b4e64;
+
+    /* ACCENT */
+    --accent-color: #d8bfd0;
+    --accent-hover: #ccb1c4;
+
+    /* BORDER */
+    --border-color: #e4d9e3;
+
+    /* STATES */
+    --success-color: #8eb7a2;
+    --warning-color: #d8b384;
+    --danger-color: #c58f96;
+
+    /* SHADOW */
+    --shadow-sm: 0 2px 10px rgba(143, 111, 134, 0.06);
+    --shadow-md: 0 10px 30px rgba(143, 111, 134, 0.10);
+
+    /* EFFECTS */
+    --hover-glow: 0 0 0 4px rgba(143, 111, 134, 0.10);
+
+    /* EXTRA */
+    --sidebar-bg: #f7f2f6;
+    --input-bg: #fbf7fb;
+
+    --sidebar-width: 250px;
+    --header-height: 100px;
+}
+
+body{
+    font-family: Raleway, sans-serif;
+    font-variant-numeric: lining-nums;
+    overflow: auto;
+    background: var(--bg-color);
+}
